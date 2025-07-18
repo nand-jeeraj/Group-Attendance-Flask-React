@@ -5,3 +5,5 @@ Werkzeug==3.0.1
 numpy==1.26.4
 face_recognition
 flask-cors
+python-dotenv
+
