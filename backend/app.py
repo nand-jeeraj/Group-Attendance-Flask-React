@@ -1,6 +1,4 @@
 
-# app.py (Flask backend with upload and add-face working)
-
 import os, json, face_recognition, numpy as np
 from datetime import datetime
 from flask import Flask, request, jsonify
@@ -11,6 +9,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
 from PIL import Image, UnidentifiedImageError
 import traceback
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
